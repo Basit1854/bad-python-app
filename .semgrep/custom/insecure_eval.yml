@@ -1,0 +1,10 @@
+rules:
+  - id: python.insecure-eval
+    patterns:
+      - pattern: eval(...)
+    message: "Avoid eval(); use ast.literal_eval() or other safer alternatives."
+    languages: [python]
+    severity: ERROR
+    metadata:
+      cwe: "CWE-95"
+      category: security
