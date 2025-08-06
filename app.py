@@ -16,6 +16,8 @@ from middlewares import require_api_key
 
 app = Flask(__name__)
 
+eval("2 + 2")
+
 app.config['TEMP_UPLOAD_FOLDER'] = f"{get_root_dir()}/temp/uploads"
 app.config['PUBLIC_UPLOAD_FOLDER'] = f"{get_root_dir()}/static/uploads"
 app.config['PUBLIC_IMG_FOLDER'] = f"{get_root_dir()}/static/img"
